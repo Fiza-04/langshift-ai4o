@@ -12,8 +12,8 @@ const LanguageDropdown = ({
       <select
         value={selectedLanguage}
         onChange={(e) => setSelectedLanguage(e.target.value)}
-        className="cursor-pointer rounded-full space-x-1 pl-2
-   bg-[#000000] flex items-center flex-row"
+        className="cursor-pointer space-x-1 pl-2 py-1
+   bg-neutral-900 border border-neutral-950 rounded-[5px] flex items-center flex-row"
       >
         {languages.map((language) => (
           <option key={language} value={language}>

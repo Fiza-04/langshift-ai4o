@@ -57,7 +57,7 @@ const Home: React.FC = () => {
   };
 
   return (
-    <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-white/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
+    <div className="h-[50rem] w-full dark:bg-black bg-white  dark:bg-dot-lime-200/[0.2] bg-dot-black/[0.2] relative flex items-center justify-center">
       <div className="absolute pointer-events-none inset-0 flex items-center justify-center dark:bg-black bg-white [mask-image:radial-gradient(ellipse_at_center,transparent_20%,black)]"></div>
       {/* <p className="text-4xl sm:text-7xl font-bold relative z-20 bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-500 py-8">
         Backgrounds
@@ -113,14 +113,15 @@ const Home: React.FC = () => {
                   onChange={() => {}}
                 />
                 <div className="flex flex-row justify-between w-full">
-                  <span className="flex flex-row cursor-pointer space-x-2 py-2">
+                  <span className="flex flex-row cursor-pointer space-x-3 py-2">
                     <LanguageDropdown
                       selectedLanguage={selectedLanguage}
                       setSelectedLanguage={setSelectedLanguage}
                       languages={languages}
                     />
                     <FaVolumeUp
-                      size={19}
+                      size={21}
+                      className="pt-1"
                       onClick={() => handleAudioPlay(targetText)}
                     />
                   </span>
